@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Total Belanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pembayaran</h1>
+        <form id="belanjaForm">
+            <label for="member">Apakah Anda Member?</label><br>
+            <div class="toggle-group">
+                <input type="radio" id="yes" name="member" value="yes" required>
+                <label for="yes" class="toggle-button">Ya</label>
+                <input type="radio" id="no" name="member" value="no">
+                <label for="no" class="toggle-button">Tidak</label>
+            </div>
+
+            <label for="total" class="total-belanja">Total Belanja:</label><br>
+            <input type="number" id="total" name="total" required><br><br>
+
+            <input type="submit" value="Hitung">
+        </form>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Total Bayar</h1>
+            <p id="totalBelanja" class="result-modal"></p>
+            <p id="diskon" class="result-modal"></p>
+            <p id="potongan" class="result-modal"></p>
+            <p id="totalSetelahDiskon" class="result-modal"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
